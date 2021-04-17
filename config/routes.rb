@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'pages/reflection'
   get 'pages/reflection2'
   get 'pages/close'
+  get 'pages/future'
   get 'questions/random'
   get 'categories/random'
 
