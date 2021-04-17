@@ -1,5 +1,6 @@
 class QuestionsController < ApplicationController
   def random
-    @question = Question.all.sample
+    theme = Theme.find(params[:theme_id])
+    @question = theme.questions.all.sample
   end
 end

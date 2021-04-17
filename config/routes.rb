@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   resources :categories, only: [:show] do
     get 'themes/random'
   end
+  resources :themes, only: [:show] do
+    get 'questions/random'
+  end
   get 'pages/top'
   get 'pages/about'
   get 'pages/usage'
@@ -16,7 +19,6 @@ Rails.application.routes.draw do
   get 'pages/reflection2'
   get 'pages/close'
   get 'pages/future'
-  get 'questions/random'
   get 'categories/random'
 
   root to: 'pages#top'
