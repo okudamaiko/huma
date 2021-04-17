@@ -15,6 +15,10 @@ h2 {
   line-height: 1.4;
   text-align: center;
 }
+h4 {
+  text-align: center;
+  font-weight: 400;
+}
 
 p {
   font-size: 16px;
@@ -26,4 +30,11 @@ p {
 
 .img {
   text-align: center;
+}
+
+.category {
+  padding: 5px;
+  text-align: center;
+  border: rgb(158, 158, 158) dashed 2px;
+  // background-color: rgb(235, 245, 245);
 }
