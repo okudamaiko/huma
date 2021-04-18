@@ -1,18 +1,20 @@
 <h2>テーマ</h2>
-<h1><%= @question.theme.name %></h1>
+<div class="category">
+    <h1><%= @question.theme.name %></h1>
+</div>
 </br>
 </br>
 </br>
 <h2>質問</h2>
-<h2><%= @question.name %></h2>
-
+<div class="category">
+    <h2><%= @question.name %></h2>
+</div>
 </br>
 </br>
 
 
 </br>
-<h2>ルール</h2>
-</br>
+<h2>質問するときのルール</h2>
 <h3>質問する人は評価や自分の意見を言わない</h3>
 <p>「いい考えと思う」「私もそう思う」などの発言も控えてください。</br>
     このゲームの最も大切なルールです。
@@ -23,36 +25,41 @@
         <p> 一度質問しただけでは、話し手の考えが理解できないのは当然です。</br>
             掘り下げて質問することは、話し手の考えを整理するサポートになるので、積極的に二度目、三度目の質問をしましょう。</p>
         </br>
-        <h3>時間の目安<h3>
-                <p>時間の目安は参加者数✖️5分です。5分を目安に次の質問者に替わってください。</br>もっと掘り下げたいときは時間をオーバーしても構いません。</p>
+        <h3> 質問カードから外れた質問でも構わない<h3>
+                <p> 話し手の価値観、考えを掘り下げることが目的です。</br>
+                    カードから離れて聞き手が聞きたいことを聞いても構いません。</p>
                 </br>
 
-                <div class="top-btn">
-
-                    <div class="top-btn2">
-                        <%= link_to '　　話し手が話しにくいとき　　', pages_deadlock_url, class: 'btn btn-info' %></div>
-                </div>
-                <div class="top-btn">
-                    <div class="top-btn2">
-                        <%= link_to '　もっと話を掘り下げたいとき　', pages_deeply_url, class: 'btn btn-info' %></div>
-                </div>
-
-                <div class="top-btn">
-                    <div class="top-btn2">
-                        <%= link_to '質問を変えたいとき／次の質問者', questions_random_url, class: 'btn btn-info' %>
-                    </div>
-                </div>
-                </br>
-                <h3> 全員が質問し終わったら<h3>
-                        <p>このテーマについて掘り下げが足りない時は、２周目、３周目の質問をしても構いません。</br>
-                            今の話し手が終了するときは、対話ゲームの振りかえりをしてください。</p>
+                <h3>時間の目安<h3>
+                        <p>時間の目安は参加者数✖️5分です。5分を目安に次の質問者に替わってください。</br>もっと掘り下げたいときは時間をオーバーしても構いません。</p>
                         </br>
-                        <div class="img">
-                            <img class="about-img" src="/hoshi.jpg">
+
+                        <div class="top-btn">
+
+                            <div class="top-btn2">
+                                <%= link_to '　　話し手が話しにくいとき　　', pages_deadlock_url, class: 'btn btn-info' %></div>
+                        </div>
+                        <div class="top-btn">
+                            <div class="top-btn2">
+                                <%= link_to '　もっと話を掘り下げたいとき　', pages_deeply_url, class: 'btn btn-info' %></div>
                         </div>
 
                         <div class="top-btn">
                             <div class="top-btn2">
-                                <%= link_to '　　　話し手の振りかえり　　　', pages_reflection_url, class: 'btn btn-info' %>
+                                <%= link_to '質問を変えたいとき／次の質問者', theme_questions_random_url(theme_id: @question.theme_id), class: 'btn btn-info' %>
                             </div>
                         </div>
+                        </br>
+                        <h3> 全員が質問し終わったら<h3>
+                                <p>このテーマについて掘り下げが足りない時は、２周目、３周目の質問をしても構いません。</br>
+                                    今の話し手が終了するときは、対話ゲームの振りかえりをしてください。</p>
+                                </br>
+                                <div class="img">
+                                    <img class="about-img" src="/hoshi.jpg">
+                                </div>
+
+                                <div class="top-btn">
+                                    <div class="top-btn2">
+                                        <%= link_to '　　　話し手の振りかえり　　　', pages_reflection_url, class: 'btn btn-info' %>
+                                    </div>
+                                </div>

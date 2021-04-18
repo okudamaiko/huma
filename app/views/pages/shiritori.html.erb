@@ -1,0 +1,30 @@
+<h2>ウォーミングアップしよう</h2></br>
+<h4>つぎのテーマでしりとりをします。
+</h4> </br>
+
+
+<div class="category">
+    <h2> <%= %w[行ったことがある場所 食べもの 地名 動物の名前 植物の名前 身につけるもの 人の名前 スポーツ選手の名前 スーパーマーケットで売っているもの].sample %>
+    </h2>
+</div>
+<div class="top-btn">
+    <div class="top-btn2">
+        <%= link_to 'テーマを選びなおす', pages_shiritori_url, class: 'btn btn-info' %></div>
+</div>
+
+<h4>下の文字からスタートしてください。</br>タイマーか時計で1分間測ってください。</h4>
+<div class="category">
+    <h1> <%= %w[あ ぎ て き り へ ぱ む ひ ば が た と よ み れ ろ わ い う え お か さ み め ら し な に ぬ ね の].sample %>
+    </h1>
+</div>
+</br>
+</br>
+<div class="img">
+    <img class="about-img" src="/yubi.jpg">
+</div>
+</br>
+<h4>ウォーミングアップが終わったら、</br>対話ゲームを始めてください。</h4>
+<div class="top-btn">
+    <div class="top-btn2">
+        <%= link_to '　ゲームスタート　', pages_game_url, class: 'btn btn-info' %></div>
+</div>

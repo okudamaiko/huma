@@ -1,12 +1,15 @@
 <h2>テーマ</h2>
-<h1><%= @theme.name %></h1>
-
+</br>
+<div class="category">
+    <h1><%= @theme.name %></h1>
+</div>
 </br>
 </br>
 
-<p>今から5分以内でテーマについて話してください。</br>
+<p>今からテーマについて話してください。時間の目安は3分程度です。</br>
     自分の考えとその理由を話してください。</p>
 </br>
+
 </br>
 
 <p>話し手の話が終わったら、他の人は一人ずつ、質問カードを引いて、話し手に質問してください。</p>
@@ -14,7 +17,7 @@
 
 <div class="top-btn">
     <div class="top-btn2">
-        <%= link_to 'ランダム質問', questions_random_url, class: 'btn btn-info' %>
+        <%= link_to '　質問カードをひく　', theme_questions_random_url(theme_id: @theme.id), class: 'btn btn-info' %>
     </div>
 
 </div>
