@@ -1,5 +1,5 @@
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/sqlite3-1.4.2/ext/sqlite3
-/Users/okudamaiko/.rbenv/versions/2.6.6/bin/ruby -I /Users/okudamaiko/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210418-34659-13ibw5o.rb extconf.rb
+/Users/okudamaiko/.rbenv/versions/2.6.6/bin/ruby -I /Users/okudamaiko/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210418-42098-p3nwid.rb extconf.rb
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for -ldl... yes
@@ -18,10 +18,10 @@ checking for sqlite3_uint64 in sqlite3.h... yes
 creating Makefile
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/sqlite3-1.4.2/ext/sqlite3
-make "DESTDIR=" clean
+make DESTDIR\= clean
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/sqlite3-1.4.2/ext/sqlite3
-make "DESTDIR="
+make DESTDIR\=
 compiling aggregator.c
 compiling backup.c
 compiling database.c
@@ -59,5 +59,5 @@ compiling statement.c
 linking shared-object sqlite3/sqlite3_native.bundle
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/sqlite3-1.4.2/ext/sqlite3
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20210418-34659-1ojy7e3/sqlite3
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20210418-42098-1x7b7k6/sqlite3

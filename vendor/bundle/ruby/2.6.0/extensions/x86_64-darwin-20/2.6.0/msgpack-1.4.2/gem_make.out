@@ -1,5 +1,5 @@
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/msgpack-1.4.2/ext/msgpack
-/Users/okudamaiko/.rbenv/versions/2.6.6/bin/ruby -I /Users/okudamaiko/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210418-34659-1pupkwk.rb extconf.rb
+/Users/okudamaiko/.rbenv/versions/2.6.6/bin/ruby -I /Users/okudamaiko/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210418-42098-1ugfo6d.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -13,10 +13,10 @@ checking for rb_hash_clear() in ruby.h... yes
 creating Makefile
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/msgpack-1.4.2/ext/msgpack
-make "DESTDIR=" clean
+make DESTDIR\= clean
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/msgpack-1.4.2/ext/msgpack
-make "DESTDIR="
+make DESTDIR\=
 compiling buffer.c
 compiling buffer_class.c
 compiling extension_value_class.c
@@ -39,5 +39,5 @@ compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.bundle
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/msgpack-1.4.2/ext/msgpack
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20210418-34659-z4b6fn/msgpack
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20210418-42098-e15dfb/msgpack

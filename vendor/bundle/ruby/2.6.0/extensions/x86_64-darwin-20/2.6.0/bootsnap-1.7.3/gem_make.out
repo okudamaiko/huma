@@ -1,15 +1,15 @@
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.3/ext/bootsnap
-/Users/okudamaiko/.rbenv/versions/2.6.6/bin/ruby -I /Users/okudamaiko/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210418-34659-1ugp34w.rb extconf.rb
+/Users/okudamaiko/.rbenv/versions/2.6.6/bin/ruby -I /Users/okudamaiko/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210418-42098-1557c3j.rb extconf.rb
 creating Makefile
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.3/ext/bootsnap
-make "DESTDIR=" clean
+make DESTDIR\= clean
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.3/ext/bootsnap
-make "DESTDIR="
+make DESTDIR\=
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.3/ext/bootsnap
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210418-34659-76btee/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210418-42098-gryzr4/bootsnap

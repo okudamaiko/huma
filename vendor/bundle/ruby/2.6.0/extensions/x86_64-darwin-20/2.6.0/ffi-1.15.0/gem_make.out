@@ -1,5 +1,5 @@
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.0/ext/ffi_c
-/Users/okudamaiko/.rbenv/versions/2.6.6/bin/ruby -I /Users/okudamaiko/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210418-34659-r5ix70.rb extconf.rb
+/Users/okudamaiko/.rbenv/versions/2.6.6/bin/ruby -I /Users/okudamaiko/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210418-42098-8qv39q.rb extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... yes
 checking for ffi_prep_cif_var()... yes
 checking for ffi_raw_call()... yes
@@ -8,10 +8,10 @@ creating extconf.h
 creating Makefile
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.0/ext/ffi_c
-make "DESTDIR=" clean
+make DESTDIR\= clean
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.0/ext/ffi_c
-make "DESTDIR="
+make DESTDIR\=
 compiling AbstractMemory.c
 compiling ArrayType.c
 compiling Buffer.c
@@ -38,5 +38,5 @@ compiling ffi.c
 linking shared-object ffi_c.bundle
 
 current directory: /Users/okudamaiko/programing/huma/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.0/ext/ffi_c
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20210418-34659-1qcdqfq
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20210418-42098-thiprj
