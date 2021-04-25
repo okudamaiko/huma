@@ -1,27 +1,53 @@
 <h2>テーマ</h2>
 </br>
-<div class="category">
-    <h1><%= @theme.name %></h1>
+<div class="category fade-in-bottom">
+    <h2><%= @theme.name %></h2>
 </div>
 </br>
 </br>
 
-<h4>今からテーマについて話してください。</h4>
-<h4>自分の考えとその理由を話してください。</h4>
-</br>
+<h5>今からテーマについて話してください。</h5>
+<h5>自分の考えとその理由を話してください。</h5>
+<!-- Button trigger modal -->
 <div class="top-btn">
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModal">
+        話しにくいと感じたら
+    </button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">話し手が話しにくいとき</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>話し手の方へ</h4>
+                <p>・言いたくないことを無理に言う必要はありません。そんなときは、「言葉が出てこない」とか「今は言いたくない」と答えて構いません。</p>
+                <p>・ゆっくり考えて構いません。このゲームでは深く考えることが最も大事です。</p>
+                <p>・テーマからずれているのでは？と心配する必要はありません。テーマに沿っていることよりも、話し手が自分の考えていることを口に出すことが大事です。</p>
+                <p>・テーマが話しにくければ、別のテーマに変えても構いません。</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">閉じる</button>
 
-    <div class="top-btn2">
-        <%= link_to '　　話し手が話しにくいとき　　', pages_deadlock_url, class: 'btn btn-info btn-lg' %></div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<h4>話し手の話が終わったら、聞き手は一人ずつ、質問カードを引いて、話し手に質問してください。</h4>
+
+
+<h5>話し手の話が終わったら、聞き手は一人ずつ、質問カードを引いて、話し手に質問してください。</h5>
 
 
 </div>
 <div class="top-btn">
     <div class="top-btn2">
-        <%= link_to '　　　質問カードをひく　　　', theme_questions_random_url(theme_id: @theme.id), class: 'btn btn-info btn-lg' %>
+        <%= link_to '質問カードをひく', theme_questions_random_url(theme_id: @theme.id), class: 'btn btn-info btn-lg' %>
     </div>
 </div>
 </br>
