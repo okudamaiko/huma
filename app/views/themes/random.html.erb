@@ -6,12 +6,23 @@
 </br>
 </br>
 
-<h5>今からテーマについて話してください。</h5>
-<h5>自分の考えとその理由を話してください。</h5>
+<h5>今から話し手は、テーマについて話します。</h5>
+<h5>すぐに話し出さずに、30秒程度「自分の考えとそう考える理由」を整理してから、話し始めてください。</h5>
+
+<div class="top-btn">
+    <div class="top-btn2">
+        <%= link_to '話しにくいとき', pages_deadlock_url, class: 'btn btn-outline-secondary btn-lg' %></div>
+</div>
+
+<p>話し手の話が終わったら、聞き手は一人ずつ、質問カードを引いて、話し手に質問してください。</p>
+</br>
+<p>質問カードは２種類あります。基本の質問カードは、「なぜ____と思うのですか」など穴埋めになっていますので、言葉を補って質問します。</br>基本の質問だけでは、掘り下げられない場合は、ヒントの質問カードを使ってください。</p>
+</div>
+
 <!-- Button trigger modal -->
 <div class="top-btn">
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModal">
-        話しにくいと感じたら
+        基本の質問カードをひく
     </button>
 </div>
 <!-- Modal -->
@@ -19,17 +30,18 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">話し手が話しにくいとき</h5>
+                <h5 class="modal-title" id="exampleModalLabel">基本の質問カード</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <h4>話し手の方へ</h4>
-                <p>・言いたくないことを無理に言う必要はありません。そんなときは、「言葉が出てこない」とか「今は言いたくない」と答えて構いません。</p>
-                <p>・ゆっくり考えて構いません。このゲームでは深く考えることが最も大事です。</p>
-                <p>・テーマからずれているのでは？と心配する必要はありません。テーマに沿っていることよりも、話し手が自分の考えていることを口に出すことが大事です。</p>
-                <p>・テーマが話しにくければ、別のテーマに変えても構いません。</p>
+                <div class="category">
+                    <h2> <%= %w[なぜ_____と思うのですか _____についてもっとくわしく教えてください _____であってもそういえますか？].sample %>
+                    </h2>
+                </div>
+                </br>
+                <h6>「なぜ」や「もっとくわしく」は4〜5回追いかけ質問を繰り返すと深く掘り下げることができます。</h6>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-info" data-dismiss="modal">閉じる</button>
@@ -39,26 +51,35 @@
     </div>
 </div>
 
-
-
-<h5>話し手の話が終わったら、聞き手は一人ずつ、質問カードを引いて、話し手に質問してください。</h5>
-
-
-</div>
 <div class="top-btn">
     <div class="top-btn2">
-        <%= link_to '質問カードをひく', theme_questions_random_url(theme_id: @theme.id), class: 'btn btn-info btn-lg' %>
+        <%= link_to 'ヒントの質問カードをひく', theme_questions_random_url(theme_id: @theme.id), class: 'btn btn-info btn-lg' %>
     </div>
 </div>
+
 </br>
 <h4>テーマを選びなおしたいとき</h4>
 <div class="top-btn">
     <div class="top-btn2">
-        <%= link_to '初級編',  category_themes_random_url(category_id: 1), class: 'btn btn-info btn-lg' %></div>
+        <%= link_to 'STEP1',  category_themes_random_url(category_id: 1), class: 'btn btn-outline-secondary btn-lg' %></div>
 
     <div class="top-btn2">
-        <%= link_to '中級編',  category_themes_random_url(category_id: 2), class: 'btn btn-info btn-lg' %></div>
+        <%= link_to 'STEP2',  category_themes_random_url(category_id: 2), class: 'btn btn-outline-secondary btn-lg' %></div>
 
     <div class="top-btn2">
-        <%= link_to '進路編',  category_themes_random_url(category_id: 3), class: 'btn btn-info btn-lg' %></div>
+        <%= link_to 'STEP3',  category_themes_random_url(category_id: 3), class: 'btn btn-outline-secondary btn-lg' %></div>
+</div>
+</br>
+<h4> 全員が質問し終わったら</h4>
+<p>このテーマについて掘り下げが足りない時は、２周目、３周目の質問をしてください。</br>
+    今の話し手が終了するときは、対話ゲームの振りかえりをしてください。</p>
+</br>
+<div class="img">
+    <img class="about-img" src="/hoshi.jpg">
+</div>
+
+<div class="top-btn">
+    <div class="top-btn2">
+        <%= link_to '話し手の振りかえり', pages_reflection_url, class: 'btn btn-info btn-lg' %>
+    </div>
 </div>

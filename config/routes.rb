@@ -2,9 +2,11 @@ Rails.application.routes.draw do
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
   resources :categories, only: [:show] do
     get 'themes/random'
+    
   end
   resources :themes, only: [:show] do
     get 'questions/random'
+    
   end
   get 'pages/top'
   get 'pages/about'
