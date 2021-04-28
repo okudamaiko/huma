@@ -23,6 +23,8 @@ Rails.application.routes.draw do
   get 'pages/close'
   get 'pages/future'
   get 'pages/shiritori'
+  get 'pages/philo'
+  get 'pages/warmup'
   get 'categories/random'
 
   root to: 'pages#top'

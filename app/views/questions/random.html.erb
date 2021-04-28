@@ -11,51 +11,57 @@
 </div>
 </br>
 </br>
+
 <div class="top-btn">
-    <button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal" data-target="#exampleModal">
-        質問のルール
-    </button>
+    <div class="top-btn2">
+        <p>
+            <a class="btn btn-outline-secondary btn-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                質問のルール </a>
+    </div>
 </div>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">質問のルール</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h4 class="rule">質問する人は評価や自分の意見を言わない</h4>
-                <p>「いい考えと思う」「私もそう思う」などの発言も控えてください。</br>
-                    このゲームの最も大切なルールです。
-                    他の参加者が質問以外の発言をした時は指摘してやめてもらいましょう。</p>
-
-                <h4 class="rule"> 何度でも質問できる<h4>
-                        <p> 一度質問しただけでは、話し手の考えが理解できないのは当然です。</br>
-                            掘り下げて質問することは、話し手の考えを整理するサポートになるので、積極的に二度目、三度目の質問をしましょう。</p>
-
-                        <h4 class="rule"> 質問カードから外れた質問でも構わない<h4>
-                                <p> 話し手の価値観、考えを掘り下げることが目的です。</br>
-                                    カードから離れて聞き手が聞きたいことを聞いても構いません。</p>
+</p>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        <h5 class="rule">質問する人は評価や自分の意見を言わない</h5>
+        <p>・「いい考えと思う」「私もそう思う」などの発言も控えてください。このゲームの最も大切なルールです。</p>
+        <p>・他の参加者が質問以外の発言をした時は、気づいた人が指摘してやめてもらいましょう。</p>
+        <h5 class="rule"> 質問は自由に</h5>
+        <p>・何度でも質問できます。</p>
+        <p>・話し手の価値観、考えを掘り下げる目的に沿っていたら、質問カードから外れた質問でも構いません。</p>
 
 
-                                <h4 class="rule">時間の目安<h4>
-                                        <p>時間の目安は参加者数✖️5分です。5分を目安に次の質問者に替わってください。</br>もっと掘り下げたいときは時間をオーバーしても構いません。</p>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">閉じる</button>
-
-            </div>
-        </div>
     </div>
 </div>
 
 <div class="top-btn">
     <div class="top-btn2">
-        <%= link_to '話し手が話しにくいとき', pages_deadlock_url, class: 'btn btn-outline-secondary btn-lg' %></div>
+        <p>
+            <a class="btn btn-outline-secondary btn-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                話しにくいとき </a>
+    </div>
 </div>
+</p>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        <h5 class="rule">話しにくそうにしているとき</h5>
+
+        <h5 class="rule">話し手の方へ</h5>
+        <p>・言いたくないことを無理に言う必要はありません。そんなときは、「言葉が出てこない」とか「今は言いたくない」と答えて構いません。</p>
+        <p>・ゆっくり考えて構いません。このゲームでは深く考えることが最も大事です。</p>
+        <p>・テーマからずれているのでは？と心配する必要はありません。テーマに沿っていることよりも、話し手が自分の考えていることを口に出すことが大事です。</p>
+        <p>・テーマが話しにくければ、別のテーマに変えても構いません。</p>
+
+        </br>
+        <h5 class="rule">聞き手の方へ</h5>
+        <p>・質問の意図がわかりにくい場合は、かみ砕いて話したり、答えやすい質問に言い換えてみてください。</p>
+        <p>・無理に聞きだそうとしないようにしましょう。</p>
+        <p>・話し手に嫌な思いをさせていないか、気をつけましょう。</p>
+        <p>・話し手の意見を否定する態度はとらないようにしましょう。鼻で笑ったり、馬鹿にする態度も含みます。</p>
+        <p>・自分の考えに誘導しようとしないようにしましょう。</p>
+
+    </div>
+</div>
+
 <%
 =begin%>
 <div class="top-btn">

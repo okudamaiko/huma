@@ -1,27 +1,50 @@
 <div class="about-main">
 
+    <div class="img">
+        <img class="top-img" src="/logo.png">
+    </div>
 
-    <img class="top-img" src="/key.png">
-    <h2>humaとは</h2>
-    </br>
-    <p>進路の話しあいサポートツール「huma」は、対話ゲームを通じて、親子の大事なコミュニケーションをサポートします。
-    </p>
-    <p>親子って、いちばん身近で大切な存在なのに、なぜか素直に話しづらい関係ではありませんか？</br>
-        この対話ゲームでは、親も子も価値観を開示する対話を行い、心を開いて話せる関係性をつくります。</br>
-        </br>
-        進路の決断に正解はありませんが、子どもが自分の考えをよく整理したうえで、決断するためのサポートをします。
-    </p>
+    <div class="top-btn">
+        <a class="btn btn-outline-secondary btn-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            humaとは </a>
+    </div>
+
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <p>
+                自分の考えを話す、人の話を聞く。</br></br>
+                息を吸うように毎日やっていることと思うかもしれませんが、
+                自分の考えを整理して、恥ずかしがらずに話すこと、
+                思い込みを排して、人の話を素直に聞くことは、実はとても難しいことです。</br>
+                </br>
+                特に思春期の子を持つ親子関係ではなおさら難しいでしょう。</br>
+                </br>
+                このゲームは、家族で進路のことなど大事な話をするときに、親も子も感情的にならずに、
+                素直に話ができる関係性をつくるための対話サポートアプリです。</br>
+                </br>
+                画面の指示にしたがって、話をしたり、質問したりするだけで、
+                お互いの価値観を共有したり、さらに深めあったりすることができます。</br>
+                </br>
+                進路の決断に正解はありませんが、子どもが自分の考えをよく整理したうえで、決断するためのサポートをします。
+            </p>
+        </div>
+    </div>
 
     <div class="top-btn">
         <div class="top-btn2">
-            <%= link_to 'humaについて', pages_about_url, class: 'btn btn-info btn-lg' %></div>
+            <%= link_to 'わたしたちの思い', pages_about_url, class: 'btn btn-outline-secondary btn-lg' %></div>
     </div>
     <div class="top-btn">
         <div class="top-btn2">
-            <%= link_to '使いかた', pages_usage_url, class: 'btn btn-info btn-lg' %></div>
+            <%= link_to '使いかた', pages_usage_url, class: 'btn btn-outline-secondary btn-lg' %></div>
+    </div>
+    <div class="top-btn">
+        <div class="top-btn2">
+            <%= link_to 'ウォーミングアップする', pages_warmup_url, class: 'btn btn-info btn-lg' %></div>
     </div>
     <div class="top-btn">
         <div class="top-btn2">
             <%= link_to 'ゲームをはじめる', pages_game_url, class: 'btn btn-info btn-lg' %></div>
     </div>
+
 </div>

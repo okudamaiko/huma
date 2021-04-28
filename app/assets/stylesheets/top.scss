@@ -1,8 +1,26 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.top-img {
-  width: 100%;
+
+.step {
+  text-align: left;
+  margin: 10px;
+}
+.step-title {
+  margin: 10px;
+}
+
+.omoi {
+  margin: 30px;
+}
+
+div.container-m {
+  margin-top: 40px;
+}
+
+.img-fulied {
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .about-main {
@@ -18,6 +36,7 @@
 
 .about-main p {
   font-size: 16px;
+  text-align: left;
 }
 
 .top-btn {

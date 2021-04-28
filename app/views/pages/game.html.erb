@@ -4,22 +4,50 @@
     <img class="about-img" src="/eieio.jpg">
 </div>
 
-<h3>話し手</h3>
-<p>それでは、対話ゲームをスタートします。
-    まず、親（大人）から（複数いる場合は一人ずつ）話し手となって、自己開示します。
-    大人が終わったら、子どもが話し手となります。</p>
+<div class="container container-m">
+    <div class="row">
+        <div class="col-md-4">
+            <h3 class="haikei">大事なルール</h3>
+            <p class="step">人の話をちゃんと聞く</p>
+            <p class="step">お互いの考え方を尊重する</p>
+            <p class="step">相手に伝わるように話す</p>
+        </div>
+        <div class="col-md-4">
 
-<p>準備ができたら、テーマ選定ボタンを押してください。</p>
+            <h3 class="haikei">話すときに気をつけること</h3>
+            <p class="step">自分の「考え」と「そう考える理由」を話す</p>
+            <p class="step">言いたくないことは言わなくていい</p>
+            <p class="step">慌てて話さず、じっくり考える</p>
+        </div>
+        <div class="col-md-4">
 
-</br>
-</br>
+            <h3 class="haikei">質問するときに気をつけること</h3>
+            <p class="step">質問以外の発言はしない</p>
+            <p class="step">相手のことを理解しようとする気持ちで聞く</p>
+            <p class="step">無理に聞き出そうとしない</p>
 
-<p>STEP1では、ふだん話さないけど、世の中に対して思っていることを話します。</p>
-<div class="top-btn">
-    <%= link_to 'STEP1のテーマを表示する',  category_themes_random_url(category_id: 1), class: 'btn btn-outline-secondary btn-lg' %></div>
-<p>STEP2では、自分のことを掘り下げて話します。</p>
-<div class="top-btn">
-    <%= link_to 'STEP2のテーマを表示する',  category_themes_random_url(category_id: 2), class: 'btn btn-outline-secondary btn-lg' %></div>
-<p>STEP3では、人生・仕事・お金など生き方をテーマに話します。</p>
-<div class="top-btn">
-    <%= link_to 'STEP3のテーマを表示する',  category_themes_random_url(category_id: 3), class: 'btn btn-outline-secondary btn-lg' %></div>
+        </div>
+    </div>
+</div>
+</br></br>
+<h4>準備ができたら、テーマ選定ボタンを押してください。</h4>
+
+
+<div class="container container-m">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="top-btn">
+                <%= link_to 'STEP1のテーマを表示する',  category_themes_random_url(category_id: 1), class: 'btn btn-outline-secondary btn-lg' %></div>
+            <p>STEP1では、ふだん話さないけど、世の中に対して思っていることを話します。</p>
+        </div>
+        <div class="col-md-4">
+            <div class="top-btn">
+                <%= link_to 'STEP2のテーマを表示する',  category_themes_random_url(category_id: 2), class: 'btn btn-outline-secondary btn-lg' %></div>
+            <p>STEP2では、自分のことを掘り下げて話します。</p>
+        </div>
+        <div class="col-md-4">
+            <div class="top-btn">
+                <%= link_to 'STEP3のテーマを表示する',  category_themes_random_url(category_id: 3), class: 'btn btn-outline-secondary btn-lg' %></div>
+            <p>STEP3では、人生・仕事・お金など生き方をテーマに話します。</p>
+        </div>
+    </div>

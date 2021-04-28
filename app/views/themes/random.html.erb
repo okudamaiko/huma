@@ -9,12 +9,8 @@
 <h5>今から話し手は、テーマについて話します。</h5>
 <h5>すぐに話し出さずに、30秒程度「自分の考えとそう考える理由」を整理してから、話し始めてください。</h5>
 
-<div class="top-btn">
-    <div class="top-btn2">
-        <%= link_to '話しにくいとき', pages_deadlock_url, class: 'btn btn-outline-secondary btn-lg' %></div>
-</div>
 
-<p>話し手の話が終わったら、聞き手は一人ずつ、質問カードを引いて、話し手に質問してください。</p>
+<p>話し手の話が終わったら、聞き手は一人ずつ、質問カードを引いて、話し手に質問してください。質問は話し手の考えの背景が理解できるまで続けてください。</p>
 </br>
 <p>質問カードは２種類あります。基本の質問カードは、「なぜ____と思うのですか」など穴埋めになっていますので、言葉を補って質問します。</br>基本の質問だけでは、掘り下げられない場合は、ヒントの質問カードを使ってください。</p>
 </div>
@@ -37,7 +33,7 @@
             </div>
             <div class="modal-body">
                 <div class="category">
-                    <h2> <%= %w[なぜ_____と思うのですか _____についてもっとくわしく教えてください _____であってもそういえますか？].sample %>
+                    <h2> <%= %w[なぜ_____と思うのですか _____についてもっとくわしく教えてください たとえ_____であってもそういえますか？].sample %>
                     </h2>
                 </div>
                 </br>
@@ -58,7 +54,12 @@
 </div>
 
 </br>
-<h4>テーマを選びなおしたいとき</h4>
+<h6>話し手が話しにくそうにしているとき</h6>
+<div class="top-btn">
+    <div class="top-btn2">
+        <%= link_to '話しにくいとき', pages_deadlock_url, class: 'btn btn-outline-secondary btn-lg' %></div>
+</div>
+<h6>テーマを選びなおしたいとき</h6>
 <div class="top-btn">
     <div class="top-btn2">
         <%= link_to 'STEP1',  category_themes_random_url(category_id: 1), class: 'btn btn-outline-secondary btn-lg' %></div>
