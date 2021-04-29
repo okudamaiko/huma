@@ -5,7 +5,7 @@
 </br>
 </br>
 </br>
-<h2>質問</h2>
+<h2>ヒントの質問</h2>
 <div class="question fade-in-bottom">
     <h2><%= @question.name %></h2>
 </div>
@@ -62,20 +62,20 @@
     </div>
 </div>
 
-<%
-=begin%>
-<div class="top-btn">
-    <div class="top-btn2">
-        <%= link_to 'もっと話を掘り下げたいとき', pages_deeply_url, class: 'btn btn-info btn-lg' %></div>
-</div>
-<%
-=end%>
 
 <div class="top-btn">
     <div class="top-btn2">
         <%= link_to '質問を変えたいとき／次の質問者', theme_questions_random_url(theme_id: @question.theme_id), class: 'btn btn-info btn-lg' %>
     </div>
 </div>
+
+<div class="top-btn">
+    <div class="top-btn2">
+        <%= link_to '前のページへもどる', :back , class: 'btn btn-outline-secondary btn-lg' %>
+    </div>
+</div>
+
+
 </br>
 <h3> 全員が質問し終わったら<h3>
         <p>このテーマについて掘り下げが足りない時は、２周目、３周目の質問をしても構いません。</br>

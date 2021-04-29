@@ -1,12 +1,80 @@
-<div class="card">
-    <h2>テーマ</h2>
-    <div class="category">
-        <h2><%= @question.theme.name %></h2>
+<h2>基本の質問</h2>
+
+
+
+</br>
+<div class="category">
+    <h2> <%= %w[なぜ_____と思うのですか _____についてもっとくわしく教えてください _____であってもそういえますか？].sample %>
+    </h2>
+</div>
+</br>
+<h6>「なぜ」や「もっとくわしく」は4〜5回追いかけ質問を繰り返すと深く掘り下げることができます。</h6>
+<div class="top-btn">
+    <div class="top-btn2">
+        <%= link_to '前のページへもどる', :back , class: 'btn btn-outline-secondary btn-lg' %>
     </div>
-    </br>
-    </br>
-    <div class="category">
-        <h2> <%= %w[なぜ_____と思うのですか _____についてもっとくわしく教えてください _____であってもそういえますか？].sample %>
-        </h2>
+</div>
+
+<div class="top-btn">
+    <div class="top-btn2">
+        <p>
+            <a class="btn btn-outline-secondary btn-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                質問のルール </a>
+    </div>
+</div>
+</p>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        <h5 class="rule">質問する人は評価や自分の意見を言わない</h5>
+        <p>・「いい考えと思う」「私もそう思う」などの発言も控えてください。このゲームの最も大切なルールです。</p>
+        <p>・他の参加者が質問以外の発言をした時は、気づいた人が指摘してやめてもらいましょう。</p>
+        <h5 class="rule"> 質問は自由に</h5>
+        <p>・何度でも質問できます。</p>
+        <p>・話し手の価値観、考えを掘り下げる目的に沿っていたら、質問カードから外れた質問でも構いません。</p>
+
+
+    </div>
+</div>
+
+<div class="top-btn">
+    <div class="top-btn2">
+        <p>
+            <a class="btn btn-outline-secondary btn-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                話しにくいとき </a>
+    </div>
+</div>
+</p>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        <h4 class="rule">話しにくそうにしているとき</h4>
+        <div class="container container-m">
+            <div class="row">
+                <div class="col-md-6 warm">
+                    <h5 class="rule">話し手の方へ</h5>
+                    <p>・言いたくないことを無理に言う必要はありません。そんなときは、「言葉が出てこない」とか「今は言いたくない」と答えて構いません。</p>
+                    <p>・ゆっくり考えて構いません。このゲームでは深く考えることが最も大事です。</p>
+                    <p>・テーマからずれているのでは？と心配する必要はありません。テーマに沿っていることよりも、話し手が自分の考えていることを口に出すことが大事です。</p>
+                    <p>・テーマが話しにくければ、別のテーマに変えても構いません。</p>
+
+                </div>
+                <div class="col-md-6 warm">
+                    <h5 class="rule">聞き手の方へ</h5>
+                    <p>・質問の意図がわかりにくい場合は、かみ砕いて話したり、答えやすい質問に言い換えてみてください。</p>
+                    <p>・無理に聞きだそうとしないようにしましょう。</p>
+                    <p>・話し手に嫌な思いをさせていないか、気をつけましょう。</p>
+                    <p>・話し手の意見を否定する態度はとらないようにしましょう。鼻で笑ったり、馬鹿にする態度も含みます。</p>
+                    <p>・自分の考えに誘導しようとしないようにしましょう。</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        </br>
+
+
+
+
     </div>
 </div>

@@ -31,23 +31,30 @@
 </div>
 </br></br>
 <h4>準備ができたら、テーマ選定ボタンを押してください。</h4>
-
-
 <div class="container container-m">
     <div class="row">
         <div class="col-md-4">
             <div class="top-btn">
-                <%= link_to 'STEP1のテーマを表示する',  category_themes_random_url(category_id: 1), class: 'btn btn-outline-secondary btn-lg' %></div>
+                <%= link_to  category_themes_random_url(category_id: 1)do %>
+                <img src="/step1.png" height="100" alt="img" class="img-fulied">
+                <% end %>
+            </div>
             <p>STEP1では、ふだん話さないけど、世の中に対して思っていることを話します。</p>
         </div>
+
         <div class="col-md-4">
             <div class="top-btn">
-                <%= link_to 'STEP2のテーマを表示する',  category_themes_random_url(category_id: 2), class: 'btn btn-outline-secondary btn-lg' %></div>
+                <%= link_to  category_themes_random_url(category_id: 2)do %>
+                <img src="/step2.png" height="100" alt="img" class="img-fulied">
+                <% end %>
+            </div>
             <p>STEP2では、自分のことを掘り下げて話します。</p>
         </div>
         <div class="col-md-4">
             <div class="top-btn">
-                <%= link_to 'STEP3のテーマを表示する',  category_themes_random_url(category_id: 3), class: 'btn btn-outline-secondary btn-lg' %></div>
+                <%= link_to  category_themes_random_url(category_id: 3)do %>
+                <img src="/step3.png" height="100" alt="img" class="img-fulied">
+                <% end %></div>
             <p>STEP3では、人生・仕事・お金など生き方をテーマに話します。</p>
         </div>
     </div>

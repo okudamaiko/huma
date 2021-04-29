@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   get 'pages/philo'
   get 'pages/warmup'
   get 'categories/random'
-
+  get 'questions/question1'
   root to: 'pages#top'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

@@ -55,6 +55,16 @@ p {
   padding-top: 40px;
 }
 
+.haikei2 {
+  background-image: url(/haik.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 130px;
+  display: table-cell;
+  vertical-align: text-bottom;
+  padding-top: 40px;
+}
+
 .category {
   // margin: 20px 50px;
   padding: 30px 30px;
@@ -87,5 +97,5 @@ p {
   border-radius: 3px;
   box-shadow: 0 5px 10px 0 rgba(87, 84, 84, 0.5);
   font-weight: bolder;
-  margin: 0px 30px;
+  margin: 0px 0px;
 }

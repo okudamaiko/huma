@@ -14,6 +14,8 @@
 </br>
 <p>質問カードは２種類あります。基本の質問カードは、「なぜ____と思うのですか」など穴埋めになっていますので、言葉を補って質問します。</br>基本の質問だけでは、掘り下げられない場合は、ヒントの質問カードを使ってください。</p>
 </div>
+<%
+=begin%>
 
 <!-- Button trigger modal -->
 <div class="top-btn">
@@ -46,30 +48,33 @@
         </div>
     </div>
 </div>
+<%
+=end%>
+
+<div class="top-btn">
+    <div class="top-btn2">
+        <%= link_to '基本の質問カードをひく', questions_question1_url, class: 'btn btn-info btn-lg' %>
+    </div>
+</div>
 
 <div class="top-btn">
     <div class="top-btn2">
         <%= link_to 'ヒントの質問カードをひく', theme_questions_random_url(theme_id: @theme.id), class: 'btn btn-info btn-lg' %>
     </div>
 </div>
-
 </br>
-<h6>話し手が話しにくそうにしているとき</h6>
+<h4>話し手が話しにくそうにしているとき</h4>
 <div class="top-btn">
     <div class="top-btn2">
         <%= link_to '話しにくいとき', pages_deadlock_url, class: 'btn btn-outline-secondary btn-lg' %></div>
 </div>
-<h6>テーマを選びなおしたいとき</h6>
+<h4>テーマを選びなおしたいとき</h4>
 <div class="top-btn">
     <div class="top-btn2">
-        <%= link_to 'STEP1',  category_themes_random_url(category_id: 1), class: 'btn btn-outline-secondary btn-lg' %></div>
-
-    <div class="top-btn2">
-        <%= link_to 'STEP2',  category_themes_random_url(category_id: 2), class: 'btn btn-outline-secondary btn-lg' %></div>
-
-    <div class="top-btn2">
-        <%= link_to 'STEP3',  category_themes_random_url(category_id: 3), class: 'btn btn-outline-secondary btn-lg' %></div>
+        <%= link_to '選び直し', category_themes_random_url(@theme.category), class: 'btn btn-outline-secondary btn-lg' %>
+    </div>
 </div>
+
 </br>
 <h4> 全員が質問し終わったら</h4>
 <p>このテーマについて掘り下げが足りない時は、２周目、３周目の質問をしてください。</br>
