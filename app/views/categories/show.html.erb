@@ -3,6 +3,7 @@
 <table>
     <thead>
         <tr>
+            <td>テーマid</td>
             <td>テーマ名</td>
             <td>質問1</td>
             <td>質問2</td>
@@ -12,9 +13,10 @@
     <tbody>
         <% @category.themes.each do |theme| %>
         <tr>
+            <td><%= theme.id %></td>
             <td><%= theme.name %></td>
             <% theme.questions.each do |question| %>
-            <td><%= question.name %></td>
+            <td><%= question.name %><%= question.id %></td>
             <% end %>
         </tr>
         <% end %>
