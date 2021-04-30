@@ -5,80 +5,125 @@
 </div>
 </br>
 </br>
+<div class="container container-m">
+    <div class="row">
+        <div class="col-md-4 warm">
+            <p class="reflection2">今から話し手は、テーマについて話します。</p>
+            <p class="reflection2">すぐに話し出さずに、30秒程度「自分の考えとそう考える理由」を整理してから、話し始めてください。</p>
 
-<h5>今から話し手は、テーマについて話します。</h5>
-<h5>すぐに話し出さずに、30秒程度「自分の考えとそう考える理由」を整理してから、話し始めてください。</h5>
+        </div>
+        <div class="col-md-4 warm">
+            <p class="reflection2">話し手の話が終わったら、聞き手は一人ずつ、質問カードを引いて、話し手に質問してください。</br>質問は話し手の考えの背景が理解できるまで続けてください。</p>
+        </div>
+        <div class="col-md-4 warm">
+            <p class="reflection2">質問カードは２種類あります。</br>基本の質問カードは、「なぜ____と思うのですか」など穴埋めになっていますので、言葉を補って質問します。</br>
+                基本の質問だけでは、掘り下げられない場合は、ヒントの質問カードを使ってください。</p>
+        </div>
+
+    </div>
+</div>
 
 
-<p>話し手の話が終わったら、聞き手は一人ずつ、質問カードを引いて、話し手に質問してください。質問は話し手の考えの背景が理解できるまで続けてください。</p>
+
+
 </br>
-<p>質問カードは２種類あります。基本の質問カードは、「なぜ____と思うのですか」など穴埋めになっていますので、言葉を補って質問します。</br>基本の質問だけでは、掘り下げられない場合は、ヒントの質問カードを使ってください。</p>
-</div>
-<%
-=begin%>
 
-<!-- Button trigger modal -->
-<div class="top-btn">
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModal">
-        基本の質問カードをひく
-    </button>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">基本の質問カード</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+<div class="container container-m">
+    <div class="row">
+        <div class="col-md-6 warm">
+
+            <!-- Button trigger modal -->
+            <div class="top-btn">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModal">
+                    基本の質問カードをひく
                 </button>
             </div>
-            <div class="modal-body">
-                <div class="category">
-                    <h2> <%= %w[なぜ_____と思うのですか _____についてもっとくわしく教えてください たとえ_____であってもそういえますか？].sample %>
-                    </h2>
-                </div>
-                </br>
-                <h6>「なぜ」や「もっとくわしく」は4〜5回追いかけ質問を繰り返すと深く掘り下げることができます。</h6>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">閉じる</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">基本の質問カード</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="category">
+                                <h2> <%= %w[なぜ_____と思うのですか _____についてもっとくわしく教えてください たとえ_____であってもそういえますか？].sample %>
+                                </h2>
+                            </div>
+                            </br>
+                            <h6>「なぜ」や「もっとくわしく」は4〜5回追いかけ質問を繰り返すと深く掘り下げることができます。</h6>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">閉じる</button>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <%
+=begin%>
+            <div class="top-btn">
+                <div class="top-btn2">
+                    <%= link_to '基本の質問カードをひく', questions_question1_url, class: 'btn btn-info btn-lg' %>
+                </div>
+            </div>
+            <%
+=end%>
+        </div>
+        <div class="col-md-6 warm">
+            <div class="top-btn">
+                <div class="top-btn2">
+                    <%= link_to 'ヒントの質問カードをひく', theme_questions_random_url(theme_id: @theme.id), class: 'btn btn-info btn-lg' %>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</br>
+<div class="container container-m">
+    <div class="row">
+        <div class="col-md-6 warm">
+            <h5>話しにくそうにしているとき</h5>
+            <div class="top-btn">
+                <div class="top-btn2">
+                    <%= link_to '話しにくいとき', pages_deadlock_url, class: 'btn btn-outline-secondary btn-lg' %></div>
+            </div>
+        </div>
+        <div class="col-md-6 warm">
+            <h5>テーマを選びなおしたいとき</h5>
+            <div class="top-btn">
+                <div class="top-btn2">
+                    <%= link_to '選び直し', category_themes_random_url(@theme.category), class: 'btn btn-outline-secondary btn-lg' %>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<%
-=end%>
 
-<div class="top-btn">
-    <div class="top-btn2">
-        <%= link_to '基本の質問カードをひく', questions_question1_url, class: 'btn btn-info btn-lg' %>
-    </div>
-</div>
 
-<div class="top-btn">
-    <div class="top-btn2">
-        <%= link_to 'ヒントの質問カードをひく', theme_questions_random_url(theme_id: @theme.id), class: 'btn btn-info btn-lg' %>
-    </div>
-</div>
-</br>
-<h4>話し手が話しにくそうにしているとき</h4>
-<div class="top-btn">
-    <div class="top-btn2">
-        <%= link_to '話しにくいとき', pages_deadlock_url, class: 'btn btn-outline-secondary btn-lg' %></div>
-</div>
-<h4>テーマを選びなおしたいとき</h4>
-<div class="top-btn">
-    <div class="top-btn2">
-        <%= link_to '選び直し', category_themes_random_url(@theme.category), class: 'btn btn-outline-secondary btn-lg' %>
-    </div>
-</div>
+
 
 </br>
 <h4> 全員が質問し終わったら</h4>
-<p>このテーマについて掘り下げが足りない時は、２周目、３周目の質問をしてください。</br>
-    今の話し手が終了するときは、対話ゲームの振りかえりをしてください。</p>
+<div class="container container-m">
+    <div class="row">
+        <div class="col-md-6 warm">
+            <p class="haikei2">このテーマについて掘り下げが足りない時は、２周目、３周目の質問をしてください。</p>
+        </div>
+        <div class="col-md-6 warm">
+            <p class="haikei2">今の話し手が終了するときは、対話ゲームの振りかえりをしてください。</p>
+        </div>
+    </div>
+</div>
+
 </br>
 <div class="img">
     <img class="about-img" src="/hoshi.jpg">

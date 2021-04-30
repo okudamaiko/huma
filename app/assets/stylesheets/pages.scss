@@ -31,6 +31,7 @@ h4 {
 
 p {
   font-size: 16px;
+  text-align: left;
 }
 
 .about-img {
@@ -46,23 +47,25 @@ p {
 }
 
 .haikei {
-  background-image: url(/haikei3.png);
+  background-image: url(/maru5.png);
   background-repeat: no-repeat;
   background-color: transparent;
   height: 100px;
   display: table-cell;
   vertical-align: text-bottom;
-  padding-top: 40px;
+  padding-top: 30px;
+  padding-left: 10px;
 }
 
 .haikei2 {
-  background-image: url(/haik.png);
+  background-image: url(/maru3.png);
   background-repeat: no-repeat;
   background-color: transparent;
-  height: 130px;
+  height: 100px;
   display: table-cell;
   vertical-align: text-bottom;
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .category {
@@ -97,5 +100,10 @@ p {
   border-radius: 3px;
   box-shadow: 0 5px 10px 0 rgba(87, 84, 84, 0.5);
   font-weight: bolder;
+  margin: 0px 0px;
+}
+.reflection2 {
+  text-align: left;
+
   margin: 0px 0px;
 }
