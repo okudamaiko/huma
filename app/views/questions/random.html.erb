@@ -1,4 +1,9 @@
-<h2>テーマ</h2>
+</br>
+<div class="img">
+    <img class="about-img" src="/humalogo.png">
+</div>
+
+<h2>いまのテーマ</h2>
 <div class="category">
     <h2><%= @question.theme.name %></h2>
 </div>
@@ -12,70 +17,100 @@
 </br>
 </br>
 
-<div class="top-btn">
-    <div class="top-btn2">
-        <p>
-            <a class="btn btn-outline-secondary btn-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                質問のルール </a>
+
+<div class="container container-m">
+    <div class="row">
+        <div class="col-md-6 warm">
+            <div class="top-btn">
+                <%= link_to '質問を変えたいとき／次の質問者', theme_questions_random_url(theme_id: @question.theme_id), class: 'btn btn-block btn-info btn-lg' %>
+            </div>
+        </div>
+        <div class="col-md-6 warm">
+            <!-- Button trigger modal -->
+            <div class="top-btn">
+                <button type="button" class="btn btn-block btn-info btn-lg" data-toggle="modal" data-target="#exampleModal">
+                    基本の質問カードをひく
+                </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">基本の質問カード</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="category">
+                                <h2> <%= %w[なぜ_____と思うのですか  _____についてもっとくわしく教えてください  たとえ_____であってもそういえますか？  そもそも_____って何ですか  ______と思う根拠は何ですか].sample %>
+                                </h2>
+                            </div>
+                            </br>
+                            <h6>余白____は質問者が補ってください。</h6>
+                            <h6>話し手の答えに対し、4〜5回追いかけ質問を繰り返すと深く掘り下げることができます。</h6>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">閉じる</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container container-m">
+    <div class="row">
+        <div class="col-md-6 warm">
+            <div class="top-btn">
+                <%= link_to '話しにくいと感じたら', pages_deadlock_url, class: 'btn btn-block btn-outline-secondary btn-lg' %>
+            </div>
+        </div>
+
+        <div class="col-md-6 warm">
+            <div class="top-btn">
+                <%= link_to '前のページへもどる', :back , class: 'btn btn-block btn-outline-secondary btn-lg' %>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</br> </br>
+<div class="essential">
+    <div class="container container-m">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="haikei5">大事なルール</h3>
+                <p class="step">人の話をちゃんと聞く</p>
+                <p class="step">お互いの考え方を尊重する</p>
+                <p class="step">相手に伝わるように話す</p>
+            </div>
+
+            <div class="col-md-4">
+
+                <h3 class="haikei5">話すときに気をつけること</h3>
+                <p class="step">自分の「考え」と「そう考える理由」を話す</p>
+                <p class="step">言いたくないことは言わなくていい</p>
+                <p class="step">慌てて話さず、じっくり考える</p>
+            </div>
+            <div class="col-md-5">
+
+                <h3 class="haikei5">質問するときに気をつけること</h3>
+                <p class="step">質問以外の発言はしない</p>
+                <p class="step">相手のことを理解しようとする気持ちで聞く</p>
+                <p class="step">無理に聞き出そうとしない</p>
+
+            </div>
+
+        </div>
     </div>
 </div>
-</p>
-<div class="collapse" id="collapseExample">
-    <div class="card card-body">
-        <h5 class="rule">質問する人は評価や自分の意見を言わない</h5>
-        <p>・「いい考えと思う」「私もそう思う」などの発言も控えてください。このゲームの最も大切なルールです。</p>
-        <p>・他の参加者が質問以外の発言をした時は、気づいた人が指摘してやめてもらいましょう。</p>
-        <h5 class="rule"> 質問は自由に</h5>
-        <p>・何度でも質問できます。</p>
-        <p>・話し手の価値観、考えを掘り下げる目的に沿っていたら、質問カードから外れた質問でも構いません。</p>
 
-
-    </div>
-</div>
-
-<div class="top-btn">
-    <div class="top-btn2">
-        <p>
-            <a class="btn btn-outline-secondary btn-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                話しにくいとき </a>
-    </div>
-</div>
-</p>
-<div class="collapse" id="collapseExample">
-    <div class="card card-body">
-        <h5 class="rule">話しにくそうにしているとき</h5>
-
-        <h5 class="rule">話し手の方へ</h5>
-        <p>・言いたくないことを無理に言う必要はありません。そんなときは、「言葉が出てこない」とか「今は言いたくない」と答えて構いません。</p>
-        <p>・ゆっくり考えて構いません。このゲームでは深く考えることが最も大事です。</p>
-        <p>・テーマからずれているのでは？と心配する必要はありません。テーマに沿っていることよりも、話し手が自分の考えていることを口に出すことが大事です。</p>
-        <p>・テーマが話しにくければ、別のテーマに変えても構いません。</p>
-
-        </br>
-        <h5 class="rule">聞き手の方へ</h5>
-        <p>・質問の意図がわかりにくい場合は、かみ砕いて話したり、答えやすい質問に言い換えてみてください。</p>
-        <p>・無理に聞きだそうとしないようにしましょう。</p>
-        <p>・話し手に嫌な思いをさせていないか、気をつけましょう。</p>
-        <p>・話し手の意見を否定する態度はとらないようにしましょう。鼻で笑ったり、馬鹿にする態度も含みます。</p>
-        <p>・自分の考えに誘導しようとしないようにしましょう。</p>
-
-    </div>
-</div>
-
-
-<div class="top-btn">
-    <div class="top-btn2">
-        <%= link_to '質問を変えたいとき／次の質問者', theme_questions_random_url(theme_id: @question.theme_id), class: 'btn btn-info btn-lg' %>
-    </div>
-</div>
-
-<div class="top-btn">
-    <div class="top-btn2">
-        <%= link_to '前のページへもどる', :back , class: 'btn btn-outline-secondary btn-lg' %>
-    </div>
-</div>
-
-
+</br>
 </br>
 
 <h4> 全員が質問し終わったら</h4>
@@ -90,13 +125,12 @@
     </div>
 </div>
 
-
+</br>
 <div class="img">
     <img class="about-img" src="/hoshi.jpg">
 </div>
-
+</br>
 <div class="top-btn">
-    <div class="top-btn2">
-        <%= link_to '話し手の振りかえり', pages_reflection_url, class: 'btn btn-info btn-lg' %>
-    </div>
-</div>
+    <%= link_to '話し手の振りかえり', pages_reflection_url, class: 'btn btn-block btn-info btn-lg' %>
+
+</div></br>

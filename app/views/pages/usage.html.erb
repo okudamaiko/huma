@@ -20,7 +20,8 @@
                 <p class="step">話し手を決めます。</p>
                 <p class="step">出されたテーマについて話し手が考えを述べます。</p>
                 <p class="step">聞き手は質問カードを参考に質問して、話し手の考えを理解しようと努めます。</p>
-                <p class="step">対話の振り返りまで終わったら、次の話し手へ交代します。</p>
+                <p class="step">一人の話し手が終わるごとに、対話の振りかえりをします。</p>
+                <p class="step">振り返りが終わったら、次の話し手へ交代します。</p>
             </div>
         </div>
     </div>
@@ -40,7 +41,7 @@
             <div class="col-md-4">
                 <img src="/step1.png" height="100" alt="img" class="img-fulied">
                 <h4 class="step-title">身の回りのことについて話します</h4>
-                <p class="step">日常のなかに「なぜだろう」という視点をもって考えてみましょう。</p>
+                <p class="step">「なぜだろう」という視点をもって考えてみましょう。</p>
             </div>
             <div class="col-md-4">
                 <img src="/step2.png" height="100" alt="img" class="img-fulied">
@@ -49,7 +50,7 @@
             </div>
         </div>
     </div>
-
+    </br>
     <div class="container container-m">
         <div class="row">
             <div class="col-md-4">
@@ -75,13 +76,20 @@
 </br>
 </br>
 
-<p>スマホまたはPC、タブレットを１台と時計またはアラームを準備して始めましょう。</p>
+<p class="warm">スマホまたはPC、タブレットを１台と時計またはアラームを準備して始めましょう。</p>
 
-<div class="top-btn">
-    <div class="top-btn3">
-        <%= link_to 'ウォーミングアップする', pages_warmup_url, class: 'btn btn-info btn-lg' %></div>
-</div>
-<div class="top-btn">
-    <div class="top-btn3">
-        <%= link_to 'ゲームを開始する', pages_game_url, class: 'btn btn-info btn-lg' %></div>
+<div class="container container-m">
+    <div class="row">
+        <div class="col-md-6 warm">
+            <div class="top-btn">
+                <%= link_to 'ウォーミングアップする', pages_warmup_url, class: 'btn btn-block btn-outline-secondary btn-lg' %>
+            </div>
+        </div>
+        <div class="col-md-6 warm">
+            <div class="top-btn">
+                <%= link_to 'ゲームを開始する', pages_game_url, class: 'btn btn-block btn-outline-secondary btn-lg' %>
+            </div>
+        </div>
+
+    </div>
 </div>
